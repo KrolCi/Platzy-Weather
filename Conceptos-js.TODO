@@ -1,0 +1,18 @@
+ API REST:
+   No es más que una forma de comunicarnos con nuestro backend, y aislar por completo el lenguej con el que este escrito ese backend.
+
+ **Métodos   || Que hace**
+   GET       || Devuelve un recurso
+   POST      || Registra un nuevo recurso
+   PUT       || Actualiza un recurso existente
+   DELETE    || Elimina un recurso existente
+
+ **Códigos   || Significado**
+   200       || Todo fue OK
+   300       || El contenido esta en otro sitio y será redirigido
+   400       || Acceso prohibido o el recurso no existe
+   403       || Acceso prohibido o restringido
+   404       || El recurso no existe
+   500       || Error interno del servidor
+
+Dentro de las APIS REST hay dos formatos para comunicarnos con ellas para el intercambio de mensajes.
