@@ -15,24 +15,26 @@
             <h2>An awesome way to see how we burn by global warming</h2>
         </header>
 
+        <div class="loader">Geolocalizando tu posición espera...</div>
+
         <main class="cards-group">
-            <template id="template__city">
+            <template id="template--city">
                 <div class="card">
                     <header class="card__header">
-                        <h3 class="card__tile"></h3>
-                        <h4 class="card__time"></h4>
+                        <h3 data-city class="card__title"></h3>
+                        <h4 data-time class="card__time"></h4>
                     </header>
 
                     <div class="card__info">
-                        <img class="card__image" src="" alt="">
-                        <span class="card__maxt"></span>
-                        <span class="card__mint"></span>
-                        <spam class="card__temp"></spam>
+                        <img data-icon class="card__image" src="" alt="" />
+                        <span data-temp="max" class="card__maxt"></span>
+                        <span data-temp="min" class="card__mint"></span>
+                        <spam data-temp="current" class="card__temp"></spam>
                     </div>
                 </div>
             </template>
         </main>
     </body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script type="text/javascript" src="../static/js/index.js"></script>
+        <script type="text/javascript" src="../static/js/min/index.min.js"></script>
 </html>

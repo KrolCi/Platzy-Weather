@@ -14,33 +14,70 @@
         font-weight normal
 
 .card
-    position relative
-    text-align center
+    background #eaeaea
+    background-position center
     background-size cover
+    box-sizing border-box
     color white
     height 30vh
-    padding .4em
-    width 100%
-
-    &[data-ciudad="valencia"]
-        background-image url(../img/paisaje.jpg)
-
-    &--mv
-        background-image url(../img/mv.jpg)
+    margin-bottom .5em
+    padding 1.5em
+    position relative
+    text-align center
+    text-shadow 0 0 3px black
+    width 100vw
 
     &__title
-        background white
-        color gray
-        font-size 2rem
         margin 0
         text-align center
 
-    &__date
-        background yellow
-        color gray
+    &__time
         font-size .7rem
         margin 0
         text-align center
+
+        &::after
+        &::before
+            content " - "
+
+    &__info
+        bottom .4em
+        font-size .7rem
+        left .4em
+        position absolute
+        text-align center
+
+    &__image
+        display block
+
+    &__maxt
+        color #37b948
+        text-shadow none
+
+        &::before
+            content "max: "
+
+        &::after
+            content "°C"
+
+    &__mint
+        color #37b948
+        text-shadow none
+
+        &::before
+            content "min: "
+
+        &::after
+            content "°C"
+
+    &__temp
+        display block
+        font-size 3rem
+        line-height 1
+
+        &::after
+            content "°C"
+            font-size 2rem
 
 @media screen and (max-width 400px)
     .card
