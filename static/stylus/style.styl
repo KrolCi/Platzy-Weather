@@ -1,5 +1,39 @@
 @import 'normalize'
 
+/*
+* Reiniciamos el estilo de los botones para iOS
+*/
+button
+html input[type="button"]
+input[type="reset"]
+input[type="submit"]
+    -webkit-appearance none
+
+// Botones
+.btn
+    background-color  #ff4842
+    border none
+    border-radius: 1px
+    color white
+    cursor pointer
+    display inline-block
+    font-size: .8rem
+    font-weight: bold
+    line-height 1
+    margin 0
+    margin-left 1px
+    padding 1em
+    text-align center
+    vertical-align middle
+    white-space:nowrap
+
+    &:hover
+        text-decoration none
+
+    &:active
+    &:focus
+        outline none
+
 .main-header
     background #16210b
     color white
@@ -12,6 +46,17 @@
     h2
         font-size 1rem
         font-weight normal
+
+// SEARCH
+
+.search
+    display flex
+    font-size 3rem
+    padding 0
+
+    &__text
+        width 75%
+        font-size 1rem
 
 .card
     background #eaeaea

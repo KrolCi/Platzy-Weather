@@ -17,6 +17,12 @@
 
         <div class="loader">Geolocalizando tu posición espera...</div>
 
+        <form class="search" action="">
+            <input class="search__text" data-input="cityAdd" type="text" placeholder="Agregar una nueva ciudad" />
+            <input class="search__btn btn" data-button="add" type="submit" value="Añadir una nueva ciudad" />
+            <button class="search__btn btn" data-saved-cities>Ver ciudades</button>
+        </form>
+
         <main class="cards-group">
             <template id="template--city">
                 <div class="card">
@@ -36,5 +42,5 @@
         </main>
     </body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script type="text/javascript" src="../static/js/min/index.min.js"></script>
+        <script type="text/javascript" src="../static/js/index.js"></script>
 </html>
